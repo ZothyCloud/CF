@@ -78,7 +78,7 @@ jobs:
           tailscale ip -4 || echo "Tailscale IP not found"
 
       - name: Sleep to keep VPS alive
-        run: sleep 21600  # 6 hours
+        run: sleep 150  # 6 hours
 
       - name: Backup VPS data and Tailscale state
         run: |
